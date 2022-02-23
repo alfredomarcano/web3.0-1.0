@@ -33,14 +33,15 @@
 	h1{ font-size: 2.5rem; margin-bottom: 10px; }
 	.row-header{ display: flex; justify-content: space-between; height: 100%;}
 	.col-5{ width: 100%; margin: 10px; }
+	.col-4{ width: calc(100% / 3); padding-left: 15px; padding-right: 15px; margin-left: auto; margin-right: auto;margin-bottom: 10px; height: 100%;}
 
 	header{
 		height: 100vh;
-		background: #272240;
+		background: #be6f6d;
 		padding-top: 4rem;
 	}
 		nav{
-			background: #272240;
+			background: #9d0000;
 			padding: 8px;
 			position: fixed;
 			top: 0;
@@ -81,7 +82,7 @@
 				.header-marcos:before{
 					content: '';
 					position: absolute;
-					background: #dcc657;
+					background: #537691;
 					height: 300px;
 					width: 300px;
 					z-index: 2;
@@ -114,30 +115,31 @@
 	.section-uno{
 		height: 100vh;
 		position: relative;
-		background: #f2f2f2
+		background: #f9f9f9
 	}
 	.section-dos{
-		background: #f2f2f2;
+		background: #f9f9f9;
 		height: 100vh;
 	}
 	.section-tres{
 		position: relative;
-		background: #dcc657;
+		background: #537691;
 		height: 100vh;
 	}
 	.section-cuatro{
 		position: relative;
-		background: #272240;
+		background: #ffebea;
 		height: 100vh;
 	}
-	.section-cuatro{
-		background: #272240;
+	.section-cinco{
+		background: #9d0000;
 		height: 100vh;
 		position: relative;
 	}
 	footer{
-		background: #272240;
-		height: 100vh;
+		border-top: 1px solid orange;
+		background: #9d0000;
+		height: 70vh;
 		position: relative;
 	}
 </style>
@@ -175,7 +177,7 @@
 		</section>
 	</header>
 	<section class="section-uno"> 
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#272240" d="M0,48L1440,256L1440,0L0,0Z"></path></svg>
+		<svg viewBox="0 0 1440 320"><path fill="#be6f6d" d="M0,48L1440,256L1440,0L0,0Z"></path></svg>
 		<div class="sect-top">
 		    
 		</div>
@@ -190,16 +192,30 @@
 		</div>
 	</section>
 	<section class="section-tres">
-	    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f2f2f2" d="M0,48L1440,256L1440,0L0,0Z"></path>
+	    <svg  viewBox="0 0 1440 320"><path fill="#f9f9f9" d="M0,48L1440,256L1440,0L0,0Z"></path>
 	    </svg>
-		<div class="sect-tres">
-		
+		<div class="container-xl">
+			<div style="display: flex; flex-wrap: wrap; ">
+				<div class="col-4">
+					Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Qui, soluta magnam eaque nostrum quam debitis adipisci quod voluptate similique architecto, veniam aut accusantium corrupti aliquid enim, dignissimos nulla quidem earum.
+				</div>
+				<div class="col-4">
+					Lorem ipsum dolor sit amet consectetur adipisicing, elit. Magnam, accusamus. Placeat vel ducimus qui facilis quas magni, voluptatibus, earum veritatis eveniet, repellendus sapiente iste adipisci optio est possimus consectetur dignissimos?	
+				</div>
+				<div class="col-4">
+					Lorem ipsum dolor sit amet consectetur adipisicing, elit. Magnam, accusamus. Placeat vel ducimus qui facilis quas magni, voluptatibus, earum veritatis eveniet, repellendus sapiente iste adipisci optio est possimus consectetur dignissimos?	
+				</div>
+				<div class="col-4">
+					Lorem ipsum dolor sit amet consectetur adipisicing, elit. Magnam, accusamus. Placeat vel ducimus qui facilis quas magni, voluptatibus, earum veritatis eveniet, repellendus sapiente iste adipisci optio est possimus consectetur dignissimos?	
+				</div>
+			</div>
 		</div>
 	</section>
 	<div class="section-cuatro">
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#dcc657" d="M0,48L1440,256L1440,0L0,0Z" ></path></svg>
+		<svg viewBox="0 0 1440 320"><path fill="#537691" d="M0,48L1440,256L1440,0L0,0Z" ></path></svg>
 	</div>
 	<section class="section-cinco"> 
+		<svg viewBox="0 0 1440 570"><path fill="#ffebea" d="M0,298L1440,506L1440,0L0,0Z" ></path></svg>
 		<div class="sect-cinco">
 		    
 		</div>
