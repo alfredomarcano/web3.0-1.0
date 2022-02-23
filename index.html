@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<style>
+	:root{
+		--bs-gutter-x:15px;
+	}
+
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		list-style: none;
+		text-decoration: none;
+	}
+
+	.container-fluid, .container-xxl, .container-xl, .container-lg{
+		max-width: 100%;
+	    padding-right: var(--bs-gutter-x,.75rem);
+	    padding-left: var(--bs-gutter-x,.75rem);
+	    margin-right: auto;
+	    margin-left: auto;
+	}
+	.container-xxl{ max-width: 1320px; }
+	.container-xl{ max-width: 1140px; }
+	.container-lg{ max-width: 960px; }
+
+	h1{ font-size: 2.5rem; margin-bottom: 10px; }
+	.row-header{ display: flex; justify-content: space-between; height: 100%;}
+	.col-5{ width: 100%; margin: 10px; }
+
+	header{
+		height: 100vh;
+		background: #272240;
+		padding-top: 4rem;
+	}
+		nav{
+			background: #272240;
+			padding: 8px;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 99;
+			color: white;
+		}
+
+		nav ul{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+			.btn-menu{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				height: 100%;
+			}
+
+			.btn-menu span{ 
+				height: 5px; 
+				width: 26px; 
+				margin: 2px 0px; 
+				background: white
+			}
+
+		.sect-header{
+			height: 100%;
+			background: linear-gradient(to top, transparent, #ffffff55);
+		}
+
+			.header-marcos{
+				display: flex; align-items: center; justify-content: center; height: 100%; position: relative;
+			}
+
+				.header-marcos:before{
+					content: '';
+					position: absolute;
+					background: #dcc657;
+					height: 300px;
+					width: 300px;
+					z-index: 2;
+					top: 1.6rem;
+					left: 2.2rem;
+				}
+				.header-marcos:after{
+					bottom: 1.6rem;
+					right: 2.2rem;
+					content: '';
+					position: absolute;
+					width: 300px;
+					height: 300px;
+					z-index: 3;
+					background: white;
+					/*border:10px solid white;*/
+				}
+
+			.header-marcos figure{
+				z-index: 10;
+				width: 430px;
+				height: 460px;
+			}
+				.header-marcos figure img{
+					width: 100%; 
+					height: 100%;
+					object-fit: cover;
+				}
+
+	.section-uno{
+		height: 100vh;
+		position: relative;
+		background: #f2f2f2
+	}
+	.section-dos{
+		background: #f2f2f2;
+		height: 100vh;
+	}
+	.section-tres{
+		position: relative;
+		background: #dcc657;
+		height: 100vh;
+	}
+	.section-cuatro{
+		position: relative;
+		background: #272240;
+		height: 100vh;
+	}
+	.section-cuatro{
+		background: #272240;
+		height: 100vh;
+		position: relative;
+	}
+	footer{
+		background: #272240;
+		height: 100vh;
+		position: relative;
+	}
+</style>
+<body>
+	<header>
+		<nav>
+			<ul class="container-xl">
+				<li>LOGO</li>
+				<li class="btn-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</li>
+			</ul>
+		</nav>
+		<section class="container-xl sect-header">
+			<div class="row-header">
+				<div class="col-5">
+					<div class="header-marcos">
+						<figure>
+							<img src="img/header.jpg" alt="">
+						</figure>
+					</div>
+				</div>
+				<div class="col-5">
+					<div>
+						<h1>fashion Photografy</h1>
+						<span>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Beatae cum facilis nobis temporibus perferendis, iure aspernatur blanditiis impedit magnam error, assumenda perspiciatis repudiandae exercitationem velit laboriosam quia commodi harum quae.</span>
+						<button>
+							Read more
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</header>
+	<section class="section-uno"> 
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#272240" d="M0,48L1440,256L1440,0L0,0Z"></path></svg>
+		<div class="sect-top">
+		    
+		</div>
+	</section>
+	<section class="section-dos"> 
+		<div class="sect-dos">
+
+
+
+
+
+		</div>
+	</section>
+	<section class="section-tres">
+	    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f2f2f2" d="M0,48L1440,256L1440,0L0,0Z"></path>
+	    </svg>
+		<div class="sect-tres">
+		
+		</div>
+	</section>
+	<div class="section-cuatro">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#dcc657" d="M0,48L1440,256L1440,0L0,0Z" ></path></svg>
+	</div>
+	<section class="section-cinco"> 
+		<div class="sect-cinco">
+		    
+		</div>
+	</section>
+	<footer>
+		<div class="footer">
+		    
+		</div>
+	</footer>
+</body>
+</html>
